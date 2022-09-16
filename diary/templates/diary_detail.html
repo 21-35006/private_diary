@@ -75,7 +75,7 @@
         </div>
 
        <a class="btn btn-success mt-5 mb-3" href="{% url 'diary:diary_update' object.pk%}">編集</a><!-- {% url 'diary:diary_update' object.pk %}-->
-        <a class="btn btn-danger mt-5 ml-2 mb-3" href="#">削除</a><!--{% url 'diary:diary_delete' object.pk %}-->
+        <a class="btn btn-danger mt-5 ml-2 mb-3" href="{% url 'diary:diary_delete' object.pk %}">削除</a><!---->
     </div>
 </div>
 {% endblock %}
